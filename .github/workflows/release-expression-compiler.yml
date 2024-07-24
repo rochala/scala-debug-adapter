@@ -49,18 +49,12 @@ jobs:
           echo $VERSION
           if [[ $VERSION == 2.12.* ]]; then
             echo "2.12 branch"
-          fi
-          if [[ $VERSION == 2.13.* ]]; then
+          elif [[ $VERSION == 2.13.* ]]; then
             echo "2.13 branch"
-          fi
-          if [[ $VERSION == 3.0.* ]]; then
+          elif [[ $VERSION == 3.0.* ]]; then
             echo "3.0 branch"
-          fi
-
-          if [[ $VERSION == 3.1.* || $VERSION == 3.2.* || $VERSION == 3.3.* ]]; then
+          elif [[ $VERSION == 3.1.* || $VERSION == 3.2.* || $VERSION == 3.3.* ]]; then
             echo "3.1 branch"
-          fi
-
-          if [[ $VERSION == 3.* ]]; then
+          elif [[ $VERSION == 3.* ]]; then
             echo "3.5"
           fi
